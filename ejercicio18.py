@@ -38,29 +38,29 @@ def calcular_salario():
         messagebox.showerror("Error", "Por favor, ingrese valores válidos.")
 
 
-root = tk.Tk()
-root.title("Calculadora de Salarios")
+raiz = tk.Tk()
+raiz.title("Calculadora de Salarios")
 
-tk.Label(root, text="Código:").grid(row=0, column=0, padx=10, pady=5)
-codigo_entrada = tk.Entry(root)
+tk.Label(raiz, text="Código:").grid(row=0, column=0, padx=10, pady=5)
+codigo_entrada = tk.Entry(raiz)
 codigo_entrada.grid(row=0, column=1, padx=10, pady=5)
 
-tk.Label(root, text="Nombres:").grid(row=1, column=0, padx=10, pady=5)
-nombres_entrada = tk.Entry(root)
+tk.Label(raiz, text="Nombres:").grid(row=1, column=0, padx=10, pady=5)
+nombres_entrada = tk.Entry(raiz)
 nombres_entrada.grid(row=1, column=1, padx=10, pady=5)
 
-tk.Label(root, text="Horas trabajadas al mes:").grid(row=2, column=0, padx=10, pady=5)
-horas_mes_entrada = tk.Entry(root)
+tk.Label(raiz, text="Horas trabajadas al mes:").grid(row=2, column=0, padx=10, pady=5)
+horas_mes_entrada = tk.Entry(raiz)
 horas_mes_entrada.grid(row=2, column=1, padx=10, pady=5)
 
-tk.Label(root, text="Valor por hora:").grid(row=3, column=0, padx=10, pady=5)
-valor_hora_entrada = tk.Entry(root)
+tk.Label(raiz, text="Valor por hora:").grid(row=3, column=0, padx=10, pady=5)
+valor_hora_entrada = tk.Entry(raiz)
 valor_hora_entrada.grid(row=3, column=1, padx=10, pady=5)
 
-tk.Label(root, text="Retención en la fuente (%):").grid(row=4, column=0, padx=10, pady=5)
-retencion_entry = tk.Entry(root)
+tk.Label(raiz, text="Retención en la fuente (%):").grid(row=4, column=0, padx=10, pady=5)
+retencion_entry = tk.Entry(raiz)
 retencion_entry.grid(row=4, column=1, padx=10, pady=5)
 
-tk.Button(root, text="Calcular Salario", command=calcular_salario).grid(row=5, column=0, columnspan=2, pady=10)
+tk.Button(raiz, text="Calcular Salario", command=calcular_salario).grid(row=5, column=0, columnspan=2, pady=10)
 
-root.mainloop()
+raiz.mainloop()
